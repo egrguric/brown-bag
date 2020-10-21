@@ -71,7 +71,7 @@
 			<p>Git, GitHub, and Github Pages</p>
 	                <p>Presentations through Github Pages</p>
       </section>
-
+      
       <section>
       <h2>Why GitHub?</h2>
         <ul>
@@ -121,12 +121,155 @@
 
       <section>
         <h2>The workflow</h2>
-	<h3>Jeremy</h3>
       </section>
 
       <section>
-        <h2>Improvement, maintenance, next steps</h2>
-	<h3>Evan</h3>
+        <div>From Markdown content...</div>
+        <pre style="font-size: 0.45em"><code data-trim>
+          # Introduction to Docker
+
+          This workshop is meant to introduce you to the set of virtualization
+          tools referred to as [Docker](https://www.docker.com/), which allow
+          you to use, create, and share container images.
+
+          ![Docker dark background icon](content\figures\docker_boyi_wu.jpg)
+          Retrieved from [Bo-Yi Wu on Flicker](https://www.flickr.com/photos/appleboy/25660808075), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+          [Containers](https://www.cio.com/article/2924995/what-are-containers-and-why-do-you-need-them.html)
+          create small reproducible computing workspaces on your computer, to
+          which you can ascribe specific libraries and constraints to
+          replicate specific environments.
+
+          ## Workshop Objectives
+
+          We'll first discuss broader concepts from the computing virtualization
+          space, disambiguate the many interrelated components of the
+          Docker ecosystem, and explore some use cases demonstrating the
+          value of containers in both tech and academia.
+
+          Then we'll walk through an overview of install pathways for different
+          operating systems and intended uses, touching on some general
+          troubleshooting points and the cognitive competencies cultivated
+          by dev ops tools like these.
+
+</code></pre>
+
+      </section>
+
+      <section data-background-iframe="https://ubc-library-rc.github.io/intro-docker" data-backround-interactive data-background-transition="zoom">
+        <div style="position: absolute; left: 65%; top: -300px; width: 30%; color: white; background-color: grey; opacity: 0.8; font-size: 0.8em">...to published workshop site</div>
+      </section>
+
+
+      <section data-auto-animate data-transition="none">
+        Each workshop is a GitHub repo
+          <img class="fragment fade-in-then-semi-out" src="media/github-repo.png" />
+          <img style="position: absolute; left: 60%" class="fragment" src="media/github-repo-content.png" />
+      </section>
+
+      <section data-transition="fade-in slide-out">
+        Jekyll theme in its own repo
+        <div class="fragment">
+          <img src="media/github-template.png" /><br/>
+          <span style="font-size:24px; font-style: italic; opacity: 0.8">
+          The Research Commons uses a modified version of the <a href+"https://github.com/pmarsceill/just-the-docs">Just the Docs</a> Jekyll theme
+        </div>
+      </section>
+
+      <section data-transition="slide-in none-out">
+        Applying theme to workshop sites: <b>_config.yml</b>
+        <pre class="fragment"><code data-trim data-line-numbers="1-3">
+          title: Intro to Docker
+          remote_theme: ubc-library-rc/rc-workshop-template
+          github_repo_url: "https://github.com/ubc-library-rc/intro-docker/"
+
+          # license information for workshop content
+          license_name: "Creative Commons Attribution 4.0 International License"
+          license_url: "http://creativecommons.org/licenses/by/4.0/"
+          license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
+
+          # required for building jekyll site locally
+          plugins:
+            - jekyll-remote-theme
+            - jekyll-seo-tag
+        </pre></code>
+      </section>
+
+      <section data-transition="none">
+        Applying theme to workshop sites: <b>_config.yml</b>
+        <pre><code data-trim data-line-numbers="5-8">
+          title: Intro to Docker
+          remote_theme: ubc-library-rc/rc-workshop-template
+          github_repo_url: "https://github.com/ubc-library-rc/intro-docker/"
+
+          # license information for workshop content
+          license_name: "Creative Commons Attribution 4.0 International License"
+          license_url: "http://creativecommons.org/licenses/by/4.0/"
+          license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
+
+          # required for building jekyll site locally
+          plugins:
+            - jekyll-remote-theme
+            - jekyll-seo-tag
+        </pre></code>
+      </section>
+
+      <section data-transition="none">
+        Applying theme to workshop sites: <b>_config.yml</b>
+        <pre><code data-trim data-line-numbers="10-13">
+          title: Intro to Docker
+          remote_theme: ubc-library-rc/rc-workshop-template
+          github_repo_url: "https://github.com/ubc-library-rc/intro-docker/"
+
+          # license information for workshop content
+          license_name: "Creative Commons Attribution 4.0 International License"
+          license_url: "http://creativecommons.org/licenses/by/4.0/"
+          license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
+
+          # required for building jekyll site locally
+          plugins:
+            - jekyll-remote-theme
+            - jekyll-seo-tag
+        </pre></code>
+      </section>
+
+      <section data-transition="fade-in zoom-out">
+        Instructions and documentation
+        <div class="fragment" style="margin-top: 30px; font-size:smaller">
+          <a href="https://ubc-library-rc.github.io/rc-workshop-template/">https://ubc-library-rc.github.io/rc-workshop-template/</a>
+        </div>
+      </section>
+
+      <section data-background-iframe="https://ubc-library-rc.github.io/rc-workshop-template" data-backround-interactive data-background-transition="zoom">
+      </section>
+
+
+      <section>
+        <h2>Improvement and maintenance</h2>
+	 <ul>
+           <li>
+             <b>GitHub Issues</b> for specifics
+           </li>
+           <li>
+             <b>Content Review Tracking</b> repo for workshop-level
+           </li>
+         </ul>
+         <p>opportunity for mutually benefitial student contributions</p>
+      </section>
+
+      <section>
+        <h2>Next steps</h2>
+        <ul>
+          <li>
+            apply open licenses to content
+          </li>
+          <li>
+            promote in specific circles
+          </li>
+          <li>
+            expand content to new areas
+          </li>
+        </ul>
       </section>
 
       <section>
