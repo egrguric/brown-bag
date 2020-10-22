@@ -41,13 +41,11 @@
 		<div class="slides">
 
       <section>
-        <h3>Collaborative development and publishing of open instructional content with GitHub</h3>
-		 <div style="text-align: left; line-height: 1.5; margin: 60px 15%; align: center; font-size: 0.8em">
-       Jeremy Buhler - Data Librarian<br />
-		   Allan Cho - Research Commons Librarian<br/>
-	     Eka Grguric - Digital Scholarship Librarian<br/>
-	     Evan Thornberry - GIS Librarian<br/>
-     </div>
+        <h2>Collaborative development and publishing of open instructional content with GitHub</h2>
+		 <p>Jeremy Buhler - Data Librarian</p>
+		<p>Allan Cho - Research Commons Librarian</p>
+	         <p>Eka Grguric - Digital Scholarship Librarian</p>
+	       <p>Evan Thornberry - GIS Librarian</p>
       </section>
 
 	 <section>
@@ -138,32 +136,6 @@
       </section>
 
       <section>
-        <div style="width: 28%; padding: 2%; text-align: left; position: relative; float: left">
-          <h5>Setup</h5>
-          <ul style="font-size: 0.8em">
-            <li>GitHub account for each contributor</li>
-            <li>GitHub <em>organization</em> for Research Commons</li>
-          </ul>
-        </div>
-        <div class="fragment" style="width: 28%; padding: 2%; text-align: left; position: relative; float: left">
-          <h5>Content</h5>
-          <ul style="font-size: 0.8em">
-            <li>Markdown files</li>
-            <li>reveal.js html files</li>
-          </ul>
-        </div>
-        <div class="fragment" style="width: 28%; padding: 2%; text-align: left; position: relative; float: left">
-          <h5>Skills</h5>
-          <ul style="font-size: 0.8em">
-            <li>Markdown <em>(everyone)</em></li>
-            <li>Git/GitHub <em>(everyone)</em></li>
-            <li>Jekyll themes <em>(someone)</em></li>
-          </ul>
-        </div>
-
-      </section>
-
-      <section>
         <div>From Markdown content...</div>
         <pre style="font-size: 0.45em"><code data-trim>
           # Introduction to Docker
@@ -203,11 +175,8 @@
 
       <section data-auto-animate data-transition="none">
         Each workshop is a GitHub repo
-          <img class="fragment fade-in-then-semi-out" data-fragment-index="1" src="media/github-repo.png" />
+          <img class="fragment fade-in-then-semi-out" src="media/github-repo.png" />
           <img style="position: absolute; left: 60%" class="fragment" src="media/github-repo-content.png" />
-          <span class="fragment fade-in-then-out" data-fragment-index="1" style="font-size:24px; font-style: italic; opacity: 0.8"><br/>
-          <a href="https://github.com/ubc-library-rc/intro-docker">Introduction to Docker</a> workshop created by Chelsea Palmer
-          </span>
       </section>
 
       <section data-transition="fade-in slide-out">
@@ -216,13 +185,12 @@
           <img src="media/github-template.png" /><br/>
           <span style="font-size:24px; font-style: italic; opacity: 0.8">
           The Research Commons uses a modified version of the <a href+"https://github.com/pmarsceill/just-the-docs">Just the Docs</a> Jekyll theme
-          </span>
         </div>
       </section>
 
       <section data-transition="slide-in none-out">
         Applying theme to workshop sites: <b>_config.yml</b>
-        <pre class="fragment"><code data-trim data-line-numbers="2">
+        <pre class="fragment"><code data-trim data-line-numbers="1-3">
           title: Intro to Docker
           remote_theme: ubc-library-rc/rc-workshop-template
           github_repo_url: "https://github.com/ubc-library-rc/intro-docker/"
@@ -277,49 +245,45 @@
         </pre></code>
       </section>
 
-      <section data-transition="fade">
+      <section data-transition="fade-in zoom-out">
         Instructions and documentation
-        <div style="margin-top: 30px; font-size:smaller">
+        <div class="fragment" style="margin-top: 30px; font-size:smaller">
           <a href="https://ubc-library-rc.github.io/rc-workshop-template/">https://ubc-library-rc.github.io/rc-workshop-template/</a>
         </div>
       </section>
 
-      <section data-background-iframe="https://ubc-library-rc.github.io/rc-workshop-template" data-backround-interactive data-background-transition="none">
+      <section data-background-iframe="https://ubc-library-rc.github.io/rc-workshop-template" data-backround-interactive data-background-transition="zoom">
       </section>
 
 
-      <section>
-        <h2>Improvement and maintenance</h2>
-	 <ul>
+      <section data-transition="fade-in zoom-out">
+        <h3>Improvement and maintenance</h3>
+	       <ul>
+           <li>
+             <b>Content Review Tracking</b> repo for workshop-level
+           </li>
            <li>
              <b>GitHub Issues</b> for specifics
            </li>
            <li>
-             <b>Content Review Tracking</b> repo for workshop-level
+             <b>Pull requests</b> for integrating changes
            </li>
          </ul>
-         <p>opportunity for mutually benefitial student contributions</p>
+      </section>
+      <section>
+          <p>Workshops are reviewed</p>
+          <img  src="media/content-review.png" style="width: 80%;"/>
       </section>
 
       <section>
-        <h2>Next steps</h2>
-        <ul>
-          <li>
-            apply open licenses to content
-          </li>
-          <li>
-            promote in specific circles
-          </li>
-          <li>
-            expand content to new areas
-          </li>
-        </ul>
+        <p>Issues are submitted and tagged</p>
+          <img src="media/issues.png" /><br/>
       </section>
 
       <section>
-        <h2>Lessons learned</h2>
+        <p>Pull requests from students or creators</p>
+          <img src="media/pull-request.png" style="width: 80%;"/><br/>
       </section>
-
 
 		</div>
 
